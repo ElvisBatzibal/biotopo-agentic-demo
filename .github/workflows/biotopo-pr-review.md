@@ -39,7 +39,7 @@ safe-outputs:
     target: "triggering"
     footer: "always"
 timeout-minutes: 15
-max-turns: 30
+max-turns: 50
 strict: true
 ---
 
