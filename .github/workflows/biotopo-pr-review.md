@@ -9,6 +9,7 @@ permissions:
   pull-requests: read
   copilot-requests: write
 engine: copilot
+model: gpt-4.1
 tools:
   github:
     toolsets: [context, repos, pull_requests]
