@@ -4,10 +4,9 @@ intent: "Ayudar a estudiantes a ver como un agente de IA inspecciona un PR, elig
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
-    status-comment: true
 permissions:
   contents: read
-  pull-requests: write
+  pull-requests: read
   copilot-requests: write
 engine: copilot
 tools:
@@ -33,7 +32,6 @@ safe-outputs:
   create-pull-request-review-comment:
     max: 5
     target: "triggering"
-    footer: "if-body"
   submit-pull-request-review:
     max: 1
     allowed-events: [COMMENT]
